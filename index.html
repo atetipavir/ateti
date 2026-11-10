@@ -4,40 +4,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATETI | Open Source</title>
+    <meta name="description" content="ATETI - Teknoloji, yazılım ve yaratıcılık.">
+    <title>ATETI | Technology Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">ATETI.</div>
+    <!-- Açılış ekranı -->
+    <div class="splash" id="splash">
+        <div class="splash-logo">A<span>.</span></div>
+        <h2>ATETI</h2>
+        <p>BUILD. CREATE. INNOVATE.</p>
+        <div class="loader"></div>
+    </div>
 
-        <nav>
-            <a href="#">Ana Sayfa</a>
+    <!-- Navigasyon -->
+    <header class="header">
+        <a href="#home" class="logo">ATETI<span>.</span></a>
+
+        <nav id="nav">
+            <a href="#home">Ana Sayfa</a>
             <a href="#projects">Projeler</a>
             <a href="#about">Hakkımızda</a>
+            <a href="#founder">Kurucu</a>
+            <a href="#updates">Gelişim</a>
+            <a href="#contact">İletişim</a>
         </nav>
+
+        <div class="header-actions">
+            <button id="themeBtn" aria-label="Tema değiştir">☀</button>
+            <button id="menuBtn" class="menu-btn" aria-label="Menüyü aç">☰</button>
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>ATETI</h1>
+    <main>
 
-        <p>Building ideas. Sharing code.</p>
+        <!-- Ana sayfa -->
+        <section class="hero" id="home">
+            <div class="hero-content reveal">
+                <div class="tag">INDEPENDENT TECHNOLOGY BRAND</div>
 
-        <a href="#projects" class="button">
-            Projeleri Keşfet
-        </a>
-    </section>
+                <h1>
+                    Fikirlerden<br>
+                    <span>Geleceğe.</span>
+                </h1>
 
-    <section id="projects" class="hero">
-        <h1>Projeler</h1>
-        <p>Yakında burada yeni projeler olacak.</p>
-    </section>
+                <p>
+                    Teknoloji, yazılım ve yaratıcılığın buluştuğu
+                    ATETI dünyasına hoş geldin.
+                </p>
 
-    <section id="about" class="hero">
-        <h1>Hakkımızda</h1>
-        <p>ATETI, fikirleri yazılıma dönüştürür ve açık kaynakla paylaşır.</p>
-    </section>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Projeleri Keşfet ↗</a>
+                    <a href="#about" class="btn secondary">ATETI Hakkında</a>
+                </div>
+            </div>
 
+            <div class="hero-art reveal">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="hero-symbol">A<span>.</span></div>
+                <div class="floating-text">INNOVATION</div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>INDEPENDENT DEVELOPMENT</span>
+                <span>SCROLL TO EXPLORE ↓</span>
+            </div>
+        </section>
+
+        <!-- Tanıtım -->
+        <section class="intro section reveal">
+            <div class="section-label">01 / OUR WORLD</div>
+            <h2>Teknoloji sadece bir araç değil,<br>
+                <span>yeni fikirlerin başlangıcıdır.</span>
+            </h2>
+            <p>
+                ATETI, özgün dijital projeler geliştirmek,
+                yeni teknolojiler keşfetmek ve fikirleri
+                kullanılabilir ürünlere dönüştürmek amacıyla
+                oluşturulmuş bağımsız bir teknoloji markasıdır.
+            </p>
+        </section>
+
+        <!-- Projeler -->
+        <section class="section projects" id="projects">
+            <div class="section-label">02 / PROJECTS</div>
+
+            <div class="section-heading">
+                <div>
+                    <h2>Projelerimiz<span>.</span></h2>
+                    <p>ATETI tarafından geliştirilen dijital çalışmalar.</p>
+                </div>
+                <span class="project-count">PROJECT COLLECTION</span>
+            </div>
+
+            <div class="filters">
+                <button class="filter active" data-filter="all">Tümü</button>
+                <button class="filter" data-filter="security">Güvenlik</button>
+                <button class="filter" data-filter="software">Yazılım</button>
+                <button class="filter" data-filter="media">Medya</button>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card reveal" data-category="security">
+                    <div class="project-top">
+                        <span class="project-number">01</span>
+                        <span class="project-type">SECURITY</span>
+                    </div>
+                    <div class="project-icon">◈</div>
+                    <h3>APKO</h3>
+                    <p>
+                        Parola güvenliği ve dijital bilgilerin
+                        korunması için geliştirilen yazılım projesi.
+                    </p>
+                    <span class="project-status">Geliştiriliyor</span>
+                    <a href="#contact" class="project-link">Projeyi keşfet ↗</a>
+                </article>
+
+                <article class="project-card reveal" data-category="media">
+                    <div class="project-top">
+                        <span class="project-number">02</span>
+                        <span class="project-type">MEDIA</span>
+                    </div>
+                    <div class="project-icon">♫</div>
+                    <h3>ATETI MUSIC</h3>
+                    <p>
+                        Modern arayüzü ve kullanıcı deneyimiyle
+                        müzik dünyasına yönelik bir proje.
+                    </p>
+                    <span class="project-status">Geliştiriliyor</span>
+                    <a href="#contact" class="project-link">Projeyi keşfet ↗</a>
+                </article>
+
+                <article class="project-card reveal" data-category="software">
+                    <div class="project-top">
+                        <span class="project-number">03</span>
+                        <span class="project-type">SOFTWARE</span>
+                    </div>
+                    <div class="project-icon">⌘</div>
+                    <h3>Yeni Projeler</h3>
+                    <p>
+                        ATETI ekosistemine katılacak yeni
+                        yazılım fikirleri üzerinde çalışmalar sürüyor.
+                    </p>
+                    <span class="project-status upcoming">Yakında</span>
+                    <a href="#updates" class="project-link">Gelişimi takip et ↗</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Hakkımızda -->
+        <section class="about section" id="about">
+            <div class="section-label">03 / ABOUT ATETI</div>
+
+            <div class="about-grid">
+                <div class="about-title reveal">
+                    <h2>Biz<br><span>kimiz?</span></h2>
+                    <div class="about-decoration">ATETI / EST.</div>
+                </div>
+
+                <div class="about-content reveal">
+                    <h3>Bir fikirle başladı.</h3>
+                    <p>
+                        ATETI, teknolojiye duyulan merakın
+                        ve üretme isteğinin bir sonucudur.
+                        Amacımız yalnızca yazılım geliştirmek değil,
+                        özgün ve faydalı dijital deneyimler oluşturmaktır.
+                    </p>
+
+                    <h3>Misyonumuz</h3>
+                    <p>
+                        Modern, kullanışlı ve özgün teknolojik
+                        çözümler geliştirmek.
+                    </p>
+
+                    <h3>Vizyonumuz</h3>
+                    <p>
+                        Açık kaynak kültürünü destekleyen,
+                        sürekli gelişen bir teknoloji ekosistemi oluşturmak.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kurucu -->
+        <section class="founder section" id="founder">
+            <div class="section-label">04 / THE FOUNDER</div>
+
+            <div class="founder-card reveal">
+                <div class="founder-symbol">A<span>.</span></div>
+
+                <div class="founder-content">
+                    <span class="tag">FOUNDER OF ATETI</span>
+                    <h2>Kurucumuz</h2>
+                    <p>
+                        ATETI, teknolojiye ve yazılım geliştirmeye
+                        ilgi duyan genç bir geliştirici tarafından
+                        kurulmuştur.
+                    </p>
+                    <p>
+                        Kurucumuz; kendi fikirlerini gerçek projelere
+                        dönüştürmeyi, yeni teknolojiler öğrenmeyi
+                        ve özgün dijital ürünler geliştirmeyi hedeflemektedir.
+                    </p>
+                    <div class="founder-signature">ATETI Founder</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kurucudan mesaj -->
+        <section class="message section reveal">
+            <div class="section-label">05 / A MESSAGE</div>
+            <div class="message-content">
+                <span class="quote-mark">“</span>
+                <h2>Kurucudan Mesaj</h2>
+                <p>
+                    ATETI benim için yalnızca bir isim veya web sitesi
+                    değil; fikirlerimi gerçeğe dönüştürdüğüm bir teknoloji
+                    yolculuğu.
+                </p>
+                <p>
+                    Yazılıma olan merakımla başladığım bu yolculukta
+                    her gün yeni şeyler öğreniyor, kendi projelerimi
+                    geliştiriyor ve daha iyisini hedefliyorum.
+                </p>
+                <p>
+                    Amacım sadece yazılım üretmek değil, ortaya
+                    koyduğum projelerle insanlara fayda sağlamak.
+                    Bu daha başlangıç.
+                </p>
+                <strong>— ATETI Kurucusu</strong>
+            </div>
+        </section>
+
+        <!-- Gelişim -->
+        <section class="section updates" id="updates">
+            <div class="section-label">06 / DEVELOPMENT</div>
+            <h2>Gelişim Günlüğü<span>.</span></h2>
+            <p class="section-description">
+                ATETI'nin gelişim yolculuğundan notlar.
+            </p>
+
+            <div class="update-list">
+                <div class="update-item reveal">
+                    <span class="update-dot"></span>
+                    <div>
+                        <span class="update-label">WEB PLATFORM</span>
+                        <h3>ATETI web sitesi geliştiriliyor</h3>
+                        <p>Yeni tasarım ve kullanıcı deneyimi çalışmaları.</p>
+                    </div>
+                    <span class="update-date">2026</span>
+                </div>
+
+                <div class="update-item reveal">
+                    <span class="update-dot"></span>
+                    <div>
+                        <span class="update-label">PROJECTS</span>
+                        <h3>Proje ekosistemi</h3>
+                        <p>ATETI projeleri üzerinde geliştirmeler devam ediyor.</p>
+                    </div>
+                    <span class="update-date">2026</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Açık kaynak -->
+        <section class="opensource section reveal">
+            <div class="section-label">07 / OPEN SOURCE</div>
+            <div class="opensource-box">
+                <div>
+                    <span class="tag">BUILD TOGETHER</span>
+                    <h2>Açık kaynak.<br><span>Açık fikirler.</span></h2>
+                    <p>
+                        ATETI projelerinin kaynak kodlarını
+                        inceleyebilir, geliştirme sürecini takip
+                        edebilir ve katkıda bulunabilirsin.
+                    </p>
+                </div>
+                <a class="btn primary" href="https://github.com/" target="_blank" rel="noopener">
+                    GitHub'ı Keşfet ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- İletişim -->
+        <section class="contact section" id="contact">
+            <div class="section-label">08 / CONTACT</div>
+            <h2>Birlikte daha ileriye<span>.</span></h2>
+            <p>
+                ATETI'nin gelişimini takip et ve projeleri keşfet.
+            </p>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="btn primary">
+                GitHub ↗
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">ATETI<span>.</span></a>
+        <p>Technology • Software • Innovation</p>
+        <span>© <span id="year"></span> ATETI. All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
