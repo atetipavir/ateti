@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ATETI - Teknoloji, yazılım ve yaratıcılık.">
-    <title>ATETI | Technology Platform</title>
+    <meta name="description" content="ATETI — bağımsız teknoloji, yazılım ve dijital üretim platformu. Fikirlerden geleceğe.">
+    <meta name="theme-color" content="#080b09">
+    <meta property="og:title" content="ATETI | Fikirlerden Geleceğe">
+    <meta property="og:description" content="Teknoloji, yazılım ve yaratıcılığın buluştuğu ATETI dünyasını keşfet.">
+    <meta property="og:type" content="website">
+    <title>ATETI | Fikirlerden Geleceğe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
     <!-- Açılış ekranı -->
     <div class="splash" id="splash">
@@ -28,6 +33,7 @@
             <a href="#about">Hakkımızda</a>
             <a href="#founder">Kurucu</a>
             <a href="#updates">Gelişim</a>
+            <a href="#principles">İlkeler</a>
             <a href="#contact">İletişim</a>
         </nav>
 
@@ -43,6 +49,7 @@
         <section class="hero" id="home">
             <div class="hero-content reveal">
                 <div class="tag">INDEPENDENT TECHNOLOGY BRAND</div>
+                <div class="live-status"><span class="status-pulse"></span> Fikirler üzerinde çalışıyoruz</div>
 
                 <h1>
                     Fikirlerden<br>
@@ -71,6 +78,13 @@
                 <span>INDEPENDENT DEVELOPMENT</span>
                 <span>SCROLL TO EXPLORE ↓</span>
             </div>
+        </section>
+
+        <!-- Kısa istatistikler -->
+        <section class="quick-stats" aria-label="ATETI kısa bilgiler">
+            <div><strong>01</strong><span>Bağımsız marka</span></div>
+            <div><strong>BUILD</strong><span>Üreterek öğren</span></div>
+            <div><strong>OPEN</strong><span>Açık kaynak ruhu</span></div>
         </section>
 
         <!-- Tanıtım -->
@@ -240,6 +254,35 @@
             </div>
         </section>
 
+        <!-- ATETI ilkeleri -->
+        <section class="section principles" id="principles">
+            <div class="section-label">06 / OUR PRINCIPLES</div>
+            <div class="principles-heading">
+                <h2>Nasıl düşünüyoruz<span>?</span></h2>
+                <p>Her projede yol gösteren üç temel yaklaşım.</p>
+            </div>
+            <div class="principles-grid">
+                <article class="principle-card reveal">
+                    <span class="principle-index">01</span>
+                    <div class="principle-icon">✳</div>
+                    <h3>Merak et</h3>
+                    <p>Yeni teknolojileri keşfet, sorular sor ve öğrenmeye devam et.</p>
+                </article>
+                <article class="principle-card reveal">
+                    <span class="principle-index">02</span>
+                    <div class="principle-icon">⌘</div>
+                    <h3>Üret</h3>
+                    <p>Fikirleri küçük adımlarla çalışan dijital projelere dönüştür.</p>
+                </article>
+                <article class="principle-card reveal">
+                    <span class="principle-index">03</span>
+                    <div class="principle-icon">↗</div>
+                    <h3>Geliştir</h3>
+                    <p>Geri bildirimleri değerlendir, dene ve daha iyisini hedefle.</p>
+                </article>
+            </div>
+        </section>
+
         <!-- Gelişim -->
         <section class="section updates" id="updates">
             <div class="section-label">06 / DEVELOPMENT</div>
@@ -284,7 +327,7 @@
                         edebilir ve katkıda bulunabilirsin.
                     </p>
                 </div>
-                <a class="btn primary" href="https://github.com/" target="_blank" rel="noopener">
+                <a class="btn primary" href="https://github.com/atetipavir/ateti" target="_blank" rel="noopener">
                     GitHub'ı Keşfet ↗
                 </a>
             </div>
@@ -297,12 +340,14 @@
             <p>
                 ATETI'nin gelişimini takip et ve projeleri keşfet.
             </p>
-            <a href="https://github.com/" target="_blank" rel="noopener" class="btn primary">
+            <a href="https://github.com/atetipavir/ateti" target="_blank" rel="noopener" class="btn primary">
                 GitHub ↗
             </a>
         </section>
 
     </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Yukarı çık">↑</button>
 
     <footer class="footer">
         <a href="#home" class="logo">ATETI<span>.</span></a>
